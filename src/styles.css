@@ -1,0 +1,21 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --red: red;
+  --teal: teal;
+  --navy: navy;
+}
+
+h1 {
+  color: var(--red);
+  animation: spin 2000ms infinite ease alternate-reverse;
+}
+
+@keyframes spin {
+  to {
+    transform: translateX(10%);
+  }
+}
